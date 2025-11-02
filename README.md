@@ -54,4 +54,77 @@ scratch  内变量的定义 多变量的使用 询问并等待
 定义常量 #define PI 3.14       或者是const 数据类型 常量名 如 const float pi=3.14f    3.14f表示该数值为单精度浮点型
 int 4个字节 float 4个字节 double 8个字节   char占1个字节
 4..测量字节占用 sizeof(char)
+********************#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	a = 10;
+	b = 20;
+	c = (a > b ? a : b);//三目运算符 先对判断条件进行判断a>b 如果符合则c=a不符合则c=b
+	printf("%d", c);
+	return 0;
+}
+/*
+******************************switch语句  switch()参数只能是整形变量 逻辑 case'1'若输入1则执行case'1'
+如case'1':
+printf("ok\n");
+break;switch遇到break中断
+注意default:
+printf("no\n")如果上面的情况都不满足则执行此条
+c=getchar()；//为从键盘的输入缓冲区一个一个取走一个字符 如输入abc\n则会依次取得a ,b , c , \n 这四个字符
+当读取正常字符时候会将字符转为ASCLL码
+它的返回值是整形
+*/
+
+
+
+/**********************if语句  
+if()
+{
+}
+如  int main()
+{
+	 int a=1;
+	 int b=2;
+	 if(a>b)
+	   {
+	     printf("%d\n");
+	   }
+	return 0;
+ }
+********************* if else 语句
+ 如 int main()
+{
+	int a=1;
+	int b=2;
+	if(a>b)
+ {}
+ else
+ {}
+ return 0;
+}
+****************if-else if-else 语句
+if()
+{}
+else if()
+{}
+else
+{}
+练习c=(A>b?A:b)   if(){} //  if(){}  // if(){}else{}   //if(){} else(){}  else{} //switch()  case'': printf()? break;
+********************while语句
+while和if一样是有判断的 和三目运算符也相似需要while()进行判断 然后当符合这个判断的时候进行{}如果不符合则停止
+和switch语句不一样的是 switch()语句需要用case'':来进行判断如果符合则 printf("")然后执行完则break停止，即结束并跳出switch语句 ，如果不加break 则程序不会进行二次判断直接输入以下各个判断结果，由此显示，3种判断为顺序判断且执行一次则输出以下内容不停止且以下判断无效；
+********************do...while语句 
+do做什么{} 执行括号内的程序while（）直到不符合while的判断条件停止；
+*********************for循环
+for(初始值；判断条件；初始值的运行方式)
+{
+sum+=i;//意思为 sum=sum+i;
+}
+printf("sum=%d\n",sum);
+嵌套循环 各种循环语句之间可以相互嵌套
+
+
+
+
 
